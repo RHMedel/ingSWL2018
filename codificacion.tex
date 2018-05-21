@@ -1,67 +1,92 @@
 \chapter{Reglas de diseño y programación}
-\chapterauthor{Autor1, Autor2}
+\chapterauthor{Chincho, Braian; Prado, Federico; Pucheta, Fernanda}
 
-\section{¿Por qué?}
+\section{¿Por qué es necesario contar con un código de conducta?}
 
-{En toda comunidad se deben tener reglas, y como tal, las comunidades de software libre no son la excepción. Por tanto al ser un entorno de trabajo tan grande, es necesario poder ponerse de acuerdo entre los participantes.}
+{En toda comunidad se deben tener reglas, y como tal, las comunidades de software libre no son la excepción. Por tanto al ser un entorno de trabajo tan grande, es necesario poder ponerse de acuerdo entre los participantes.
 
-\section{Códigos o Reglas de Conducta}
+Un código de conducta es un documento que establece expectativas de comportamiento para los participantes de un proyecto.}
+
+\section{Establecer un código de conducta}
+
+{Se aconseja establecer un código de conducta tan pronto como sea posible; idealmente que se haga cuando se cree el proyecto. Debería existir un archivo denominado codigo\_de\_conducta en el directorio raíz del proyecto y enlazar el mismo desde el archivo Readme, para que se encuentre visible a toda la comunidad.
+
+Además de comunicar expectativas, un código de conducta describe: }
+
+\begin{itemize}
+	\item Dónde tendrá efecto: ¿Sólo en las Issues y en las Pull Request, o también en actividades de la comunidad como eventos?
+	\item A quién o a quiénes se les aplicará el código de conducta.
+	\item Qué ocurrirá en caso de que alguien viole el mismo
+	\item De qué manera puede reportarse una violación.
+\end{itemize}
+
+\section{Decidir cómo aplicar un código de conducta}
+
+{Un código de conduta que no es, o no puede, ser aplicado, es incluso peor que no poseer código de conducta. Ya que demostraría que los valores expresados en el código, no son importantes o no son respetados en la comunidad. 
+
+Debe explicarse de qué manera será aplicado el código, ANTES de que una violación ocurra. Esto demostrará seriedad acerca de tomar acciones cuando sea necesario, hará sentir a la comunidad más segura respecto a que sus reclamos son revisados, a la vez que brindará a la comunidad la seguridad de que el proceso de revisión es justo y transparente.}
+
+\section{Aplicar un código de conducta}
+
+\begin{itemize}
+	\item Recolectar información acerca de la situación: en caso de recibir un reporte de que alguien ha violado el código, se debe investigar el asunto con seriedad. El miembro de la comunidad puede ser un reincidente que constantemente hace sentir incómodos a los demas o puede haber dicho algo por única vez. En ambas situaciones, se pueden tomar acciones al respecto.
+	\item Tomar acciones apropiadas: luego de recolectar y procesar suficiente información, se debe decidir qué acción tomar. Teniendo en mente que el objetivo es siempre fomentar un ambiente seguro, respetuoso y colaborativo. Existen varias maneras de responder a una violación, a saber:
+	\begin{itemize}
+		\item Dar a la persona en cuestión una advertencia pública, explicando cómo su comportamiento ha impactado negativamente en los demás. La comunicación pública transmite a la comunidad la seriedad con la que se considera al código.
+		\item Acercarse de forma privada a la persona en cuestión para explicarle de qué manera su comportamiento impactó negativamente en los demás. 
+		\item Expulsar a la persona del proyecto de manera temporal o permanente, dependiendo de lo ocurrido, si la persona se vuelve agresiva u hostil cuando es confrontada.
+	\end{itemize}
+\end{itemize}
+
+\section{Reglas de conducta según Debian}
+\begin{itemize}
+	\item Ser respetuoso: en todo proyecto inevitablemente habrá personas con las cuales se estará en desacuerdo, o resulte difícil cooperar. Hay que aceptarlo y seguir siendo respetuoso. El desacuerdo no es excusa para realizar ataques personales. Además, una comunidad donde la gente se sienta amenazada no es una comunidad sana.
+	\item Asumir buena fe: los contribuidores de un proyecto tienen muchas maneras de alcanzar el objetivo común de un sistema operativo libre, que pueden diferir de las maneras que uno pueda tener. Hay que asumir que las otras personas están trabajando hacia este objetivo.
+	\item Ser colaborador: si se realiza una acción para el beneficio del proyecto, hay que estar dispuesto a explicar a otros cómo funciona, así pueden construir en base a dicho trabajo, e incluso mejorarlo.
+	\item Expresarse concisamente: hay que tener presente que lo que se escribe una vez lo leerán cientos de personas. Escribir un texto corto significa que la gente podrá entender la conversación de la manera más eficientemente posible. Cuando se necesita una explicación larga, se puede considerar la opción de añadir un resumen. Además, hay que intentar mantenerse dentro del tema, especialmente en discusiones que ya son bastante largas.
+	\item Ser abierto: generalmente, en los proyectos de software libre existen vías de comunicación públicas y privadas. Se deberían usar preferentemente métodos públicos de comunicación para mensajes relacionados con el proyecto, a no ser que se esté publicando información sensible.
+Esto aplica también para mensajes de ayuda o soporte; una petición pública de soporte no sólo proporcionará una respuesta con más probabilidad y en menor tiempo, sino que también posibilita que los errores inadvertidos que cometan las personas que responden a la pregunta se detecten más fácilmente y se corrijan.
+\end{itemize}
+
+\section{Reglas de Conducta generales}
 
 \begin{itemize}
 \item Respetar otros committers
 \item Respetar otros colaboradores.
 \item Debatir y estudiar cualquier cambio significativo antes de comprometerse.
-\item Respetar los Mantenedores existentes (Si están en la lista del campo de Mantenedores del Makefile o en los Mantenedores del directorio superior).
-El mantenedor es responsable de mantener el puerto actualizado y asegurarse de que funciona correctamente. Los puertos son una forma que tienen de trabajar.
-\item Cualquier cambio en disputa debe ser respaldado hasta que se lleve a cabo y se resuelva la disputa si es solicitado por un mantenedor. cambios relacionados con la seguridad pueden anular los deseos de un mantenedor, a discreción del oficial de seguridad.
+\item Respetar los Mantenedores existentes
+\item Cualquier cambio en disputa debe ser respaldado hasta que se lleve a cabo y se resuelva la disputa si es solicitado por un mantenedor. Cambios relacionados con la seguridad pueden anular los deseos de un mantenedor, a discreción del oficial de seguridad.
 \item No luchar en público con otros committers; se ve mal.
-\item Respeto todos los códigos se congela y leer el committers y developer listas de correo en el momento oportuno, para saber cuándo una congelación de código está en vigor.
-\item En caso de duda sobre cualquier procedimiento, pregunte primero, asegurándose que sea una pregunta q ya había sido debatida o contestada anteriormente
+\item En caso de duda sobre cualquier procedimiento, preguntar primero, asegurándose que sea una pregunta que ya había sido debatida o contestada anteriormente
 \item Probar los cambios.
-\item Cuidado con los compromisos que asume
+\item No asumir compromisos que no se podrán cumplir.
+\item Documentar el trabajo.
+\item Informar regularmente a otros del progreso propio.
 \end{itemize}
-
-{Sea considerado. Nuestro trabajo será utilizado por otras personas, y que a su vez dependerá de la labor de los demás. Cualquier decisión que tome afectará a usuarios y colegas, y debemos tomar en cuenta las consecuencias al tomar decisiones. Ubuntu tiene millones de usuarios y miles de contribuyentes. Incluso si no es obvio en ese momento, nuestra contribución a Ubuntu será el impacto del trabajo de otros. Por ejemplo, cambios en el código, la infraestructura, la política, la documentación y traducciones durante una liberación pueden influir negativamente en el trabajo de otros.
-
-Sea respetuoso. La comunidad Ubuntu y sus miembros, se tratan unos a otros con respeto. Todo el mundo puede hacer una valiosa contribución a Ubuntu. Puede que no siempre estén de acuerdo, pero los desacuerdos no son excusa para un mal comportamiento o malos modales. Todos podemos experimentar algo de frustración, pero no podemos permitir que la frustración se convierta en un ataque personal. Es importante recordar que una comunidad donde la gente se siente incómoda o amenazada no es productiva. Esperamos que los miembros de la comunidad Ubuntu sean respetuosos cuando se trata de otros contribuyentes, así como con personas fuera del proyecto Ubuntu y con los usuarios de Ubuntu.
-
-Colabore. La colaboración es fundamental para Ubuntu y para la comunidad de software libre. Esta colaboración implica que los individuos trabajen con otros equipos dentro de Ubuntu, que los equipos de trabajo trabajen con otros equipos dentro de Ubuntu, y que los individuos y los equipos de trabajo de Ubuntu trabajen en otros proyectos fuera de Ubuntu. Esta colaboración se reduce la redundancia, y mejorar la calidad de nuestro trabajo. Interna y externamente, que siempre debe estar abierto a la colaboración. Siempre que sea posible, debemos trabajar en estrecha colaboración con los proyectos superiores y otros en la comunidad de software libre para coordinar nuestra técnica, promoción, documentación y otros trabajos. Nuestro trabajo debe ser hecho de forma transparente y deberíamos implicar a tantas partes interesadas como sea posible}
-
-\begin{itemize}
-\item Documentar nuestro trabajo
-\item Informar a otros regularmente de nuestro progreso
-\end{itemize}
-
-{Cuando no estamos de acuerdo, se consulta a otros. Los desacuerdos, tanto sociales como técnicos, ocurren todo el tiempo y la comunidad de Ubuntu no es la excepción. Es importante que resolver los desacuerdos y diferentes opiniones de manera constructiva y con la ayuda de la comunidad y los procesos de la comunidad. Tenemos la Junta Técnica, el Consejo de la Comunidad, y una serie de órganos de gobierno de otros que ayudan a decidir el camino correcto para Ubuntu. También hay varios equipos y Líderes de Equipo, que pueden ser capases de ayudarnos a descubrir la mejor dirección para Ubuntu. Cuando nuestros objetivos difieren notablemente, alentamos la creación de conjuntos alternativos de paquetes, o distribuciones derivadas, utilizando el marco de gestión de paquetes de Ubuntu, para que la comunidad pueda probar nuevas ideas y contribuir a la discusión.
-
-Cuando no estamos seguros, pidamos ayuda. Nadie sabe todo, y nadie está obligado a ser perfecto en la comunidad de Ubuntu. Hacer preguntas evita muchos problemas, por lo que alentamos a hacer preguntas. A los que se les formulan las preguntas deben ser receptivos y colaboradores. Sin embargo, al hacer una pregunta, se debe tener cuidado de hacerlo en un foro apropiado.
-
-Renuncie consideradamente. Los miembros de cada proyecto van y vienen, y Ubuntu no es diferente. Cuando alguien abandona o se desconecta del proyecto, en todo o en parte, le pedimos que lo hagan de una manera que minimice la interrupción al proyecto. Esto significa que debe decirle a la gente que están dejando y tomar las medidas adecuadas para asegurar que otros puedan continuar donde lo dejaron.}
 
 \section{Reglas de Diseño}
-{Las reglas de diseño sirven de guía para el desarrollo, guiando al programador en la toma de decisiones al tratar de resolver una tarea. Como en muchos otros ámbitos, en la programación existen incontables posibilidades para resolver un problema (crear un programa), y todas ellas tienen sus ventajas y desventajas. Mediante las reglas de diseño se intenta guiar a que los integrantes de la comunidad encaren la resolución de los problemas generalmente de la misma forma, y priorizando los mismos aspectos.}
+{Las reglas de diseño sirven de guía para el desarrollo, guiando al programador en la toma de decisiones al tratar de resolver una tarea. Como en muchos otros ámbitos, en la programación existen incontables posibilidades para resolver un problema y todas ellas tienen sus ventajas y desventajas. Mediante las reglas de diseño se intenta guiar a que los integrantes de la comunidad encaren la resolución de los problemas generalmente de la misma forma, y priorizando los mismos aspectos.}
 
 \begin{enumerate}
-\item Regla de Modularidad: Escribe partes simples, conectadas por interfaces simples.
-\item Regla de Claridad: ser Claro es mejor que ser ingenioso.
-\item Regla de Separación: Separa las reglas del funcionamiento; separa los interfaces de los mecanismos.
-\item Regla de Simplicidad: Diseña para la simplicidad; añade complejidad sólo donde sea estrictamente necesario.
-\item Regla de Parsimonia: Escribe un programa complejo sólo cuando sea evidente que no existe otra solución posible.
-\item Regla de Transparencia: Diseña para la visibilidad, para hacer más fácil la inspección y la corrección de fallos.
-\item Regla de Robustez: la Robustez es hija de la transparencia y la simplicidad.
-\item Regla de Representación: Convierte el conocimiento en datos, para que la lógica de los programas pueda ser sencilla y robusta.
-\item Regla de Mínima Sorpresa: En diseño de interfaces, haz siempre lo menos sorprendente.
-\item Regla de Silencio: Cuando un programa no tenga nada sorprendente que decir, no debería decir nada.
-\item Regla de Reparación: Cuando tengas que mostrar un error, falla estridentemente y lo antes posible.
-\item Regla de Economía: el tiempo del programador es caro; consérvalo sobre el tiempo de la máquina.
-\item Regla de Generación: Evita hacer cosas a mano; escribe programas que escriban programas siempre que puedas.
-\item Regla de Optimización: Prototipo antes de pulir. Haz que funcione antes de optimizarlo.
-\item Regla de Diversidad: Desconfía de todo lo que diga “esta es la única forma correcta”.
-\item Regla de Extensibilidad: Diseña para el futuro, porque estará aquí antes de lo que piensas.
+\item Regla de Modularidad: escribir partes simples, conectadas por interfaces simples. La modularidad es la descomposición de un sistema complejo en piezas más simples, llamadas módulos. El código fuente de un objeto puede ser escrito y mantenido independientemente del código fuente de otros objetos. 
+\item Regla de Claridad: la premisa consiste en ser claro a la hora de escribir código. La claridad en un programa es muy importante, ya que la mayor parte del tiempo de mantenimiento del mismo se emplea en estudiar y comprender el código existente. 
+\item Regla de Economía: el tiempo del programador es caro y es por ésto que hay que conservarlo y buscar ser lo más eficiente posibles. 
+\item Regla de Separación: consiste en separar las reglas del funcionamiento, las interfaces del mecanismo. Separación en capas que se encarguen de distintas funciones, como ser frontend y backend. 
+\item Regla de Simplicidad: diseñar para la simplicidad, añadiendo complejidad sólo donde sea estrictamente necesario. Escribir código complejo sólo cuando sea evidente que no existe otra solución posible.
+\item Regla de Transparencia: diseñar para la visibilidad, para hacer más fácil la inspección y la corrección de fallos.
+\item Regla de Representación: convierte el conocimiento en datos, para que la lógica de los programas pueda ser sencilla y robusta.
+\item Regla de Mínima Sorpresa: cuando se usa un sistema, se construye un modelo mental de la manera en que el mismo actuará, y si el sistema se comporta de manera inesperada, las personas que lo utilizan pueden molestarse.
+\item Regla de Silencio: cuando un programa no tenga nada sorprendente que decir, no debería decir nada.
+\item Regla de Reparación: cuando se produzca un error, el mismo debe ser claro y mostrarse lo antes posible.
+\item Regla de Generación: evitar hacer cosas a mano; escribir programas que escriban programas siempre que se pueda.
+\item Regla de Diversidad: desconfiar de las afirmaciones “esta es la única forma de hacerlo”, todos los aspectos pueden resolverse de diferentes maneras. 
+\item Regla de Extensibilidad: diseñar para el futuro, que el programa tenga bases sólidas desde el comienzo que le permitan crecer, porque antes de lo que uno se imagina esto ocurre.
 \end{enumerate}
 
 \section{Reglas de Programación}
-{Las reglas de programación sirven principalmente para que los integrantes de la comunidad puedan de manera más sencilla leer e interpretar el código escrito por otros integrantes, además en general sirven para tratar de evitar problemas futuros. En general, en las comunidades las reglas, de programación más comunes son las que indican que "estilo" darle al código, como ser la cantidad y tipo de caracteres se utilizan para indentar (espacios o tabs), como alinear las distintas partes de las estructuras del código y convenciones respecto de los nombres utilizados para las variables y demás. Todas estas no cambian en sí mismas el programa resultante, pero si hacen mucho en facilitar la lectura del código entre los integrantes de la comunidad.
+{Las reglas de programación sirven principalmente para que los integrantes de la comunidad puedan, de manera más sencilla, leer e interpretar el código escrito por otros integrantes. Además, en general, sirven para tratar de evitar problemas futuros. 
+
+En general, en las comunidades, las reglas de programación más comunes son las que indican que "estilo" darle al código, como ser la cantidad y tipo de caracteres que se utilizan para indentar (espacios o tabs), cómo alinear las distintas partes de las estructuras del código y convenciones respecto de los nombres utilizados para las variables y demás. Estas reglas no cambian en sí mismo el programa resultante, pero sí facilitan la lectura del código entre los integrantes de la comunidad.
 
 A continuación se presentan distintos ejemplos:
 }
@@ -136,20 +161,16 @@ Do this, instead:
 \begin{itemize}
 
 \item\textbf{Indentación:}
-{Los tabs deben ser de 8 caracteres al igual que las sangrías.
-Justificación: Se busca definir donde un bloque de control comienza y termina. 
+{Los tabs deben ser de 8 caracteres al igual que las sangrías. ya que se busca definir dónde un bloque de control comienza y termina. 
 
-Cómo funciona la sangría si tiene grandes sangrías: Algunas personas afirman que tener indentación de 8 caracteres hace que el código se mueve demasiado hacia la derecha y dificulta la lectura en una pantalla de terminal de 80 caracteres. 
-La respuesta a eso es que si se necesitan más de 3 niveles de sangría algo anda mal en la lógica y se debe arreglar.
+Algunas personas afirman que tener indentación de 8 caracteres hace que el código se mueva demasiado hacia la derecha y dificulta la lectura en una pantalla de terminal de 80 caracteres. Por tanto, si se necesitan más de 3 niveles de sangría algo anda mal en la lógica y se debe arreglar.
 
 La forma preferida de facilitar varios niveles de sangría en una instrucción switch es alinear las etiquetas `` switch`` y sus subordinadas `` case`` en la misma columna.}
 
 \item\textbf{Romper líneas largas y Strings:}
 {El estilo de codificación tiene que ver con la facilidad de lectura y la facilidad de mantenimiento utilizando herramientas disponibles.
 
-El límite de la longitud de líneas es de 80 columnas, y este límite es muy preferido.
-Las sentencias de más de 80 columnas se dividirán en fragmentos, lo cual aumentará significativamente la legibilidad y no ocultará la información.
-}
+El límite de la longitud de líneas es de 80 columnas, y este límite es muy preferido. Las sentencias de más de 80 columnas se dividirán en fragmentos, lo cual aumentará significativamente la legibilidad y no ocultará la información.}
 
 \item\textbf{Espacios y llaves:}
 Para bloques de sentencia sin función (if, switch, for, while, do), se aplican las llaves como sigue:
@@ -201,15 +222,16 @@ O este otro caso:
 
 
 \item\textbf{Espacios:}
-{Utilice espacios después de la mayoría de las palabras claves. Las excepciones son sizeof, typeof, alignof, y \_attribute\_, que parecen funciones (usualmente se utilizan paréntesis en linux.)
+{Utilice espacios después de la mayoría de las palabras claves. Las excepciones son sizeof, typeof, alignof, y \_attribute\_, que parecen funciones (usualmente se utilizan paréntesis en linux).
+
 Por lo cual, las sentencias que quedan para utilizar los espacios serían: If, Switch, Case, For, Do, While.
+
 También utilice espacios en la mayoría de los operadores binarios y ternarios, como ser: 
 \begin{verbatim}
 =  +  -  <  >  *  /  %  |  &  ^  <=  >=  ==  !=  ?  :    
 \end{verbatim}
 
-No deje espacios en blanco al final de las líneas. Algunos editores con sangría inteligente insertarán espacios en blanco al principio de las nuevas líneas según corresponda, para que pueda comenzar a escribir la siguiente línea de código de inmediato. Sin embargo, algunos de estos editores no eliminan los espacios en blanco. Como resultado, se terminan con líneas que contienen espacios en blanco.
-}
+No deje espacios en blanco al final de las líneas. Algunos editores con sangría inteligente insertarán espacios en blanco al principio de las nuevas líneas según corresponda, para que pueda comenzar a escribir la siguiente línea de código de inmediato. Sin embargo, algunos de estos editores no eliminan los espacios en blanco. Como resultado, se terminan con líneas que contienen espacios en blanco.}
 
 
 \item\textbf{Nombrado:}
@@ -326,3 +348,30 @@ c)	Funciones: Ponga un comentario sobre cada función diciendo qué hace la func
 	\item {\bf Valores enteros constantes.}, Cuando desee definir nombres con valores enteros constantes, use enum en lugar de '\#define'. GDB sabe sobre las constantes de enumeración.
 	\end{enumerate}
 \end{enumerate}
+
+\subsection{Zen of Python}
+
+{El Zen de Python es una colección de 19 principios de software que influyen en el diseño del lenguaje de programación Python. Fueron escritos por Tim Peters en 1999.}
+
+\begin{enumerate}
+	\item Lindo es mejor que feo.
+	\item Explícito es mejor que implícito.
+	\item Simple es mejor que complejo.
+	\item Complejo es mejor que complicado.
+	\item Plano es mejor que anidado.
+	\item Espaciado es mejor que denso.
+	\item La legibilidad es importante.
+	\item Los casos especiales no son lo suficientemente especiales como para romper las reglas.
+	\item Sin embargo la practicidad le gana a la pureza.
+	\item Los errores nunca deberían pasar silenciosamente.
+	\item A menos que se silencien explícitamente.
+	\item Frente a la ambigüedad, evitar la tentación de adivinar.
+	\item Debería haber una, y solamente una, manera obvia de hacerlo.
+	\item A pesar de que no sea obvio.
+	\item Ahora es mejor que nunca.
+	\item A pesar de que nunca es muchas veces mejor que justo ahora.
+	\item Si la implementación es dificil de explicar, es una mala idea.
+	\item Si la implementación es fácil de explicar, quizás sea una buena idea.
+	\item Los namespaces son una gran idea, ¡tengamos más de esos!
+\end{enumerate}
+
