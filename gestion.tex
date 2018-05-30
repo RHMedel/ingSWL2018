@@ -1,5 +1,5 @@
 \chapter{Gestión y Calidad de Proyectos de Software Libre}
-\chapterauthor{Autor1, Autor2}
+\chapterauthor{Borello Agustin, Donato Alexis, Lopez Marcos, Mattio Pablo, Vilardo Milena}
 
 \section{Qué es una comunidad de Software Libre}
 
@@ -125,40 +125,54 @@ Las desiciones se toman teniendo en cuenta aspectos tales como:
 \begin{itemize}
      \item Nivel de impacto
      \item Experiencia de los miembros de la comunidad
-     \item Diferentes áreas
+     \item Diferentes áreas del proyecto
 \end{itemize}
 
-Las desiciones más importantes son tomadas por un grupo de personas a cargo, generalmente desicines respecto al core. Para desiciones de menor impacto las discuciones son menos, como la mejora de caracteristicas de un paquete.
+Las desiciones más importantes son tomadas por un grupo de personas a cargo, generalmente desiciones respecto al core. Para desiciones de menor impacto las discuciones son menos, como la mejora de caracteristicas de un paquete.
 Dentro de un proyecto de software existen direfentes áreas por lo que sus respectivos líderes son los encargados de guiar a sus miembros al objetivo que se halla planteado.
-
-
-
-\section{¿ Cómo se comparte código e información?}
-
-El desafío radica en hacer sentir a todos los miembros de una comunidad distribuida que están trabajando juntos en una misma oficina.
-Para tal fin, la mayor parte de los proyectos de software libre de código abierto ofrecen como mínimo un conjunto de herramientas entre las que se encuentran: 
-
+\\
+\\
+Ahora partiendo de esto, se pueden nombrar distintos tipos de proyectos de fuentes abiertas basandose en como se lleva a cabo el proceso de toma de decisiones en estos y como esta compuesta su estructura interna. Estos pueden ser:
 \begin{itemize}
-     \item Sitio Web: para transmitir la información del proyecto al público en general
-     \item Listas de correo electrónico: foro de comunicación dentro del proyecto por excelencia y también el medio registral
-     \item Control de versiones: para administrar los cambios en el código fuente, incluyendo la posibilidad de revertir los mismos
-     \item Administrador de bugs: permite a los desarrolladores llevar registro de las actividades en las que están trabajando
-     \item Chat en tiempo real: un medio para discusiones rápidas e intercambios del tipo pregunta/respuesta
+    \item Monarquista: Donde las decisiones mas importantes del proyecto son llevadas a cabo por una persona o lider (Ejemplo, Linux).
+    \item Comunitaria: Se toman las decisiones de manera democratica y no existe una persona o rol central en el proyecto (Ejemplo, PostgreSQL).
+    \item Corporativa: El proyecto pertenece a una empresa privada y esta es la que toma las decisiones en el proyecto de manera formal (Ejemplo, Fedora).
+    \item Fundacion: Similar a corporativa, pero el proyecto pertenece a una fundacion sin fines de lucro, por lo que tiene estructura y toma de decisiones formales (Ejemplo, Firefox).
 \end{itemize}
 
-
-\section{¿ Qué es un fork?}
-
-Una bifurcación (fork en inglés), en el ámbito del desarrollo de software, es la creación de un proyecto en una dirección distinta de la principal u oficial tomando el código fuente del proyecto ya existente.
+Ademas, otro aspecto importante en la toma de decisiones dentro de un proyecto de software libre es la {\bf Meritocracia}. En la mayoria de situaciones, son aquellas personas que ya han contribuido de manera importante y que han ganado credibilidad con respecto a sus habilidades las que son tenidas en cuenta a la hora de tomar una decision, sea cual sea la estructura de un proyecto.
 
 
-\section{Herramientas de gestión}
+\section{¿ Cómo se lleva a cabo la comunicación entre los participantes?}
 
-Las herramientas por exelencia utilizan internet como medio de comunicación,
+Debido a la naturaleza de los proyectos de software libre y a que los participantes de estos pueden trabajar desde ubicaciones muy distantes, cobra una gran importancia los distintos medios de comunicacion que se utilizan, tanto para coordinar las actividades de los integrantes del proyecto, como para comunicar de que se trata el mismo al exterior.
+Se pueden utilizar los siguientes medios de comunicación: 
 
 \begin{itemize}
-     \item Listas de correo electrónico: foro de comunicación dentro del proyecto por excelencia y también el medio registral
-     \item Control de versiones: para administrar los cambios en el código fuente, incluyendo la posibilidad de revertir los mismos
-     \item Chats, Foros, Blogs
-     \item Gestión de reportes de fallas
+     \item Sitio Web o Blog: Para transmitir la información del proyecto al público en general, y dar a conocer actualizaciones, decisiones y problemas.
+     \item Listas de correo electrónico: es el mas sencillo de implementar, pero es el mas lento.
+     \item Foros: Pueden servir para publicacion de problemas, sugerencias y llevar a cabo discusiones, y tiene mucha visibilidad.
+     \item IRC: Sistema de chat en tiempo real, util para comunicarse rapidamente con los integrantes disponibles.
+\end{itemize}
+
+\section{¿ Como se hace disponible el codigo fuente del proyecto?}
+
+Una vez comenzado un proyecto de software libre, es necesario un punto comun donde los interesados en este puedan obtener las fuentes del proyecto, tanto para utilizarlo como para poder contribuir a este.
+Para esto, actualmente se utilizan servicios de infraestructura de alojamiento del proyecto en la web, que no solo dan posibilidad de tener un lugar en el internet donde se puede tener acceso a las fuentes del proyecto, sino que brindan herramientas que facilitan la gestion del proyecto, tales como el manejo de permisos de modificacion, publicación de issues/problemas, manejo de pull requests, entre otros.
+\\
+\\
+En la actualidad, el servicio mas popular para este fin es {\bf GitHub}, especialmente para proyectos de fuentes abiertas. Pero tambien existen otras alternativas como {\bf GitLab, SourceForge y Bitbucket}.
+
+\section{Sistemas de control de versiones}
+
+Para cualquier proyecto de software, es muy importante la implentacion de un sistema de control de versiones para poder gestionar los diversos cambios que se realizan sobre los elementos de este.
+Pero esto cobra una importancia aun mayor en proyectos de software libre, ya que aquellos que van a contribuir a estos son personas que van a tener ideas, habilidades y formas de trabajar muy distintas, por lo que la naturaleza de este va a ser mas inestable.
+Es por esto que es muy recomendable, y casi indispensable, la implementacion de sistema de control de versiones.
+\\
+\\
+Algunas alternativas que se utilizan son:
+\begin{itemize}
+    \item Git
+    \item Mercurial
+    \item Subversion    
 \end{itemize}
