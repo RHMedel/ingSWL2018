@@ -176,3 +176,49 @@ Algunas alternativas que se utilizan son:
     \item Mercurial
     \item Subversion    
 \end{itemize}
+
+\section{Control de calidad}
+
+Antes que nada es importante hacer una diferenciación entre lo que es control de calidad y aseguramiento de calidad.
+
+\begin{itemize}
+     \item\textbf{Software quality control (QC)}: realización de pruebas para detectar defectos, bloqueando la publicación de productos defectuosos y mejorando el resultado en diferentes iteraciones del ciclo de entrega-certificación. Es decir, \textit{evitar publicar con defectos}.
+     \item\textbf{Software quality assurance (QA)}: son los mecanismos que se implican en el proceso de desarrollo, verificando que se sigue unos estándares y procedimientos, y asegurando que los problemas se encuentran y se tratan adecuadamente. O sea, \textit{hacer las cosas bien a la primera}.
+\end{itemize}
+
+Además hay que tener en cuenta algunos conceptos o características relacionadas con el software libre como:
+\begin{itemize}
+     \item Modelo bazar
+     \item Existencia de componentes empaquetados por un distribuidor
+     \item Software “as is”: la mención de que el software se entrega “tal cual” significa que el proveedor lo entrega sin prestar ninguna garantía. Si bien decimos que se trata de una mención habitual en las licencias de uso, en muchas ocasiones no será válida conforme a derecho.
+     \item Presencia de dependencias
+     \item Ciclos de desarrollo desiguales
+     \item Diferentes puntos de fallo
+\end{itemize}
+
+\section{Diferencias en control de calidad entre Software libre y cerrado}
+
+En cuanto a los siguientes aspectos no hay grandes diferencias en el control de calidad respecto a proyectos cerrados:
+
+\begin{itemize}
+     \item Calidad de desarrollo dentro del departamento de desarrollo: como diferencia se puede considerar que es raro es el caso en el que sean incluidas pruebas unitarias conjuntamente con el código, aún cuando facilitarían la modificación o inclusión de código posterior por parte de otros desarrolladores.
+     \item Ciclos de testing en un departamento independiente
+     \item Automatización de pruebas: actualmente gracias a herramientas de integración continua, se ha simplificado la automatización de pruebas en proyectos de software libre. Sin embargo, anteriormente las pruebas automáticas no estaban muy arraigadas. Por lo general eran los propios usuarios, dentro de la gran variedad de usos, arquitecturas y combinaciones, los que las realizaban. Esto tenía la ventaja de que se paralelizaran a un coste mínimo para el equipo de desarrollo. El problema que planteaba este modelo era cómo organizarse para que la realimentación por parte de los usuarios existiese y fuera lo más eficiente posible. 
+\end{itemize}
+
+Posiblemente la mayor diferencia se encuentre en lo que se refiere al seguimiento de defectos, o en inglés: \textbf{bugtracking}. Debido a que los proyectos de software libre se enmarcan en la filosofía  “libere temprano, libere a menudo”, cualquier versión no ­final debería estar abierta al público. Se busca integrar al usuario en el ''ciclo de testing''. Debe ser fácil para el usuario apuntar a un defecto, el usuario no es el Departamento de Calidad: nos dice que algo falla, pero sus informes no serán de calidad. Para que el paso a una nueva entrega no sea traumático, se conforma una división del área de Calidad dedicada a los informes de usuario.
+\\
+
+En muchos proyectos, no está claro de quién es el bug: ¿Es nuestro? ¿Es un fallo de integración? Y lo más importante: ¿corresponde al upstream? Es imprescindible para saber quién lo debe corregir.
+\\
+
+\textbf{Upstream}: es el envío de un parche o corrección al autor original del software o, en su defecto, a sus mantenedores principales, para que éste se integre al código fuente del software. El desarrollo en upstream permite a otras distribuciones beneficiarse del parche al utilizar el software. Si por ejemplo se encuentra un error en una aplicación, y los mantenedores de cierta distribución lo corrigen pero no lo envían a upstream, ni las otras distribuciones ni desarrolladores podrán beneficiarse de la corrección sin tener que volver a implementar el parche de manera separada.
+\\
+
+Para realizar la distinción entre defectos se pueden usar categorías como: problemas de seguridad, errores upstream y otros errores.
+
+Además se debe tener en cuenta:
+\begin{itemize}
+     \item\textbf{Equilibrio entre integración y ''añadidos''}: no reinventar la rueda, hay que reutilizar todo lo que se pueda de la distribución base. La integración se debe enviar a upstream. Si se corrige un bug que no es nuestro, es muy importante que se incluya esa corrección en upstream. Es vital poder hacer seguimiento de los defectos, aunque no sea competencia nuestra resolverlos.
+     \item\textbf{Sincronizar ciclos de desarrollo}: si bien la publicación frecuente posibilita una gran modularidad a la vez que maximiza el efecto propagandístico que tiene el hecho de publicar una nueva versión del software, la misma puede que asuste a usuarios que prioricen la estabilidad sobre la rapidez con la que el software evoluciona. Para evitarlo, algunos proyectos de software libre cuentan con varias ramas de desarrollo en paralelo. Por ejemplo, en el sistema operativo Debian se utilizan 3 ramas: una estable, otra para pruebas y otra inestable. La estable se lanza cada 2 años, con lo cual en esa rama se podría sincronizar el ciclo de desarrollo.
+\end{itemize}
